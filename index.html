@@ -1,37 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>This Website is Deployed on AWS</title>
+    <title>Antonio De Luca</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body style="text-align: center;">
-    <h1>Owned by Antonio De Luca</h1>
-    <h2 style="margin-bottom: 1px;">Work in progress</h2>
-    <h3 style="margin-top: 5px;"> inspired by Google 1998 </h3>
-    <p>Please Note that the HTTPS is provided by GitHub <br>
-        The original deployment was on AWS in Ec2 Ubuntu Enviroment that made it dynamic <br>
-        So I could learn about the cloud deployment
-        <p style="margin-bottom: 1px;"><strong> Specifics: </strong></p>
-        <ul style="text-align: left;display: inline-block; margin-top: 5px;">
-            <li> Python 3 - backend</li>
-            <li> Flask (for the app) - framework</li>
-            <li> gunicorn - proxy deployment </li>
-            <li> VSCode SSH remote connection - so I could code on AWS cloud</li>
-        </ul>
-    <p>Although, due to the static nature has been opted for S3 in AWS for while but then swithced again<br>
-        <br>
-        Currently is on GitHub the simplier option, but the DNS is indexed by AWS Route53
 
-        
+    <div class="container">
+        <h1 class="terminus"> ANTONIO <br> DE LUCA</h1>
+        <div class="buttons">
+             <a href="resume.html" ><button class="btn"> Resume </button>
+            <a href="projects.html"><button class="btn"> Projects </button>
+        </div>
+    </div>
 
-    </p>    
-    </p>
-
-    <a href="/resume" style="margin: 15px;">
-        <button>Resume</button>
-    </a>
-
-    <a href="/projects" style="margin: 15px;">
-        <button>Projects</button>
-    </a>
+    <canvas id="myCanvas"></canvas>
+    <script src="script.js"></script>
 </body>
 </html>
