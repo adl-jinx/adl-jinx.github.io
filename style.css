@@ -63,3 +63,20 @@ canvas {display: block;}
     border-radius: 20px;
     cursor: pointer;
 }
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Increase width for smaller screens */
+        padding: 10px; /* Decrease padding for smaller screens */
+    }
+
+    .container h1 {
+        font-size: 28px; /* Decrease font-size for smaller screens */
+    }
+
+    .container .btn {
+        padding: 12px 32px; /* Decrease padding for smaller screens */
+        font-size: 16px; /* Decrease font-size for smaller screens */
+    }
+}
