@@ -1,66 +1,169 @@
-* {margin: 0; padding: 0}
-body {background: rgb(0, 0, 0);}
-canvas {display: block;}
+@font-face {
+    font-family: 'MatriBoo';
+    src: url('fonts/matriBoo.ttf') format('truetype');
+}
 
-.container h1 {
+@font-face {
+    font-family: "bodoni";
+    src: url('bodoni/bodoni.ttf') format('truetype');
+}
 
-    font-size: 48px; /* Adjust the font-size for size */
-    color: rgb(255, 255, 255);
+@font-face {
     font-family: "terminus";
-    margin: 3%;
+    src: url('terminus.ttf') format('truetype');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(0, 0, 0);
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
     margin-left: 5%;
-    letter-spacing: 8px; /* Adjust the letter spacing */
+    margin-right: 5%;
 }
 
-.container h2 {
-    font-size: 24px; /* Adjust the font-size for size */
-    color: rgb(255, 255, 255);
-    font-family: "terminus";
-    margin: 1.5%;
-    letter-spacing: 8px; /* Adjust the letter spacing */
+.transparent-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display:list-item;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.box {
+    position: relative;
+    width: 430px;
+    height: 280px;
+    background-color: #000;
+    border: 1px solid rgb(42, 45, 42);
+    border-radius: 8px;
+    padding: 16px;
+    
+    margin: 2% auto; /* Auto margin on top and bottom, and center horizontally */
+    box-shadow: 10px 10px 25px rgb(15, 15, 15);
+
+    display: flex; /* Add flexbox display */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 
-.container h3 {
-    color: rgb(255, 255, 255);
-    font-family: "terminus";
+
+.title-box {
+    position: relative;
+    font-family: 'bodoni';
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    border: 1px solid rgb(42, 45, 42);
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+.box .logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    padding: 8px;
+    border-radius: 18px;
+}
+
+.box p {
     margin: 5%;
-    letter-spacing: 8px; /* Adjust the letter spacing */
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-
-.container h4 {
-    color: rgb(255, 255, 255);
-    font-family: "terminus";
-    margin: 5%;
-    letter-spacing: 8px; /* Adjust the letter spacing */
-    margin-top: 16px
-}
-
-
-.container h5 {
-    color: rgb(255, 255, 255);
-    font-family: "terminus";
-    margin: 5%;
-    letter-spacing: 8px; /* Adjust the letter spacing */
-    margin-top: 16px
-}
-
-.container p {
-
-    margin: 2%;
-    color: rgb(255, 255, 255);
+    margin-right: 8%;
+    top: 40%;
+    font-family: "bodoni";
+    letter-spacing: 1px;
 
 }
 
-.container li{
-    margin: 2%;
-    color: rgb(255, 255, 255);
+.box h2, h3, h4{
+    padding: 8px;
+    font-family: "bodoni";
 }
 
-.container readme {
-    text-decoration: underline;
-    text-decoration-color: chartreuse;
+.box h2 {
+    position: absolute;
+    top: 8px;
+    left: 132px;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.box h3 {
+    position: absolute;
+    top: 48px; /* Adjust this as needed */
+    left: 132px;
+    font-size: 24px;
+    color: white;
+}
+
+.box h4 {
+    position: absolute;
+    top: 82px; /* Adjust this as needed */
+    left: 132px;
+    font-size: 18px;
+    color: white;
+}
+
+
+.box .details{
+    top: 1%;
+    left: 120px;
+    width: calc(100%-130px);
+}
+
+.details h2, .details h3, .details h4, p {
+position: absolute;
+margin: 0;
+color: white;
+
+}
+.details h2 {
+    font-size: 24px;
+}
+
+.details h3 {
+    font-size: 20px;
+}
+.details h4 {
+    font-size: 16px;
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
 }

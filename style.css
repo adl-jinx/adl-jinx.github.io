@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "matrix";
-    src: url('matrix.ttf') format('truetype');
+    font-family: "bodoni";
+    src: url('bodoni/bodoni.ttf') format('truetype');
 }
 
 @font-face {
@@ -32,6 +32,7 @@ canvas {display: block;}
     display:flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .container h1 {
@@ -40,10 +41,11 @@ canvas {display: block;}
     left: 50%;
     font-size: 48px; /* Adjust the font-size for size */
     color: rgb(255, 255, 255);
-    font-family: "terminus";
+    font-family: "";
     margin-bottom: 10px;
     letter-spacing: 8px; /* Adjust the letter spacing */
     margin-bottom: 16px;
+    margin-left: 16px
 }
 
 .container h6 {
@@ -52,7 +54,7 @@ canvas {display: block;}
     left: 50%;
     font-size: 14px; /* Adjust the font-size for size */
     color: rgb(255, 255, 255);
-    font-family: "terminus";
+    font-family: "bodoni";
     margin-bottom: 10px;
     letter-spacing: 4px; /* Adjust the letter spacing */
     margin-bottom: 8px;
@@ -61,7 +63,7 @@ canvas {display: block;}
 .container .btn {
     display: inline-block;
     margin: 6px 6px;
-    font-family: "terminus";
+    font-family: "bodoni";
     padding: 12px 28px;
     font-size: 18px;
     color: rgba(255, 255, 255);
@@ -83,7 +85,7 @@ canvas {display: block;}
 .container .btn2 {
     display: inline-block;
     margin: 6px 6px;
-    font-family: "terminus";
+    font-family: "bodoni";
     padding: 12px 28px;
     font-size: 18px;
     color: rgba(255, 255, 255);
@@ -98,6 +100,26 @@ canvas {display: block;}
 .container .btn2:hover {
     background-color: rgba(255, 0, 0, 0.75);
     color: white;
+}
+
+.container .btn3 {
+    display: inline-block;
+    margin: 6px 6px;
+    font-family: "terminus";
+    padding: 12px 28px;
+    font-size: 18px;
+    color: rgba(255, 255, 255);
+    background-color: rgb(10, 20, 10);
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none; /* removes underline */
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.container .btn3:hover {
+    background-color: rgba(0, 255, 0, 0.75);
+    color: black;
 }
 
 /* Media query for small screens */
