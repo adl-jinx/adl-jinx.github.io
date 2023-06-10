@@ -2,22 +2,24 @@
 var canvas = document.querySelector('#myCanvas'),
     ctx = canvas.getContext('2d');
 
-// Setting the width and height of the canvas
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
 // Setting up the letters
 var letters = '010101010101010101010ズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶヷ';
 letters = letters.split('');
 
 // Setting up the columns
-var fontSize = 11,
-    columns = canvas.width / fontSize;
+var fontSize = 11;
 
 // Setting up the drops
 var drops = [];
-for (var i = 0; i < columns; i++) {
-  drops[i] = 1;
+
+// Initialize canvas and columns
+function initialize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    columns = canvas.width / fontSize;
+    for (var i = 0; i < columns; i++) {
+      drops[i] = 1;
+    }
 }
 
 // Setting up the draw function
@@ -37,3 +39,9 @@ function draw() {
 
 // Loop the animation
 setInterval(draw, 50);
+
+// Listen to resize event
+window.addEventListener('resize', initialize);
+
+// Initial setup
+initialize();

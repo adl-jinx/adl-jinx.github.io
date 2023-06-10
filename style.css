@@ -15,7 +15,7 @@
 }
 
 * {margin: 0; padding: 0}
-body {background: rgb(1, 22, 1);}
+body {background: rgb(0, 0, 0);}
 canvas {display: block;}
 
 .container {
@@ -29,39 +29,75 @@ canvas {display: block;}
     text-align: center;
     border-radius: 18px;
     background-image: radial-gradient(circle, #000000, #000000, transparent, transparent);
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .container h1 {
-    font-size: 32px; /* Adjust the font-size for size */
-    color: rgb(0, 255, 0);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 48px; /* Adjust the font-size for size */
+    color: rgb(255, 255, 255);
     font-family: "terminus";
     margin-bottom: 10px;
-    word-spacing: 12px; /* Adjust the word spacing */
-    letter-spacing: 4px; /* Adjust the letter spacing */
-    margin-bottom: 0px;
+    letter-spacing: 8px; /* Adjust the letter spacing */
+    margin-bottom: 16px;
 }
 
-.container .buttons {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 12px;
+.container h6 {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 14px; /* Adjust the font-size for size */
+    color: rgb(255, 255, 255);
+    font-family: "terminus";
+    margin-bottom: 10px;
+    letter-spacing: 4px; /* Adjust the letter spacing */
+    margin-bottom: 8px;
 }
 
 .container .btn {
-    
+    display: inline-block;
     margin: 6px 6px;
     font-family: "terminus";
-    padding: 12px 64px;
+    padding: 12px 28px;
     font-size: 18px;
-    color: rgba(0, 255, 0);
-    background-color: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255);
+    background-color: rgb(10, 10, 20);
     border-radius: 20px;
     cursor: pointer;
+    text-decoration: none; /* removes underline */
+    text-align: center;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+
+.container .btn:hover {
+    background-color: rgba(0, 50, 255, 0.75);
+    color: white;
+}
+
+
+.container .btn2 {
+    display: inline-block;
+    margin: 6px 6px;
+    font-family: "terminus";
+    padding: 12px 28px;
+    font-size: 18px;
+    color: rgba(255, 255, 255);
+    background-color: rgb(20, 10, 10);
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none; /* removes underline */
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.container .btn2:hover {
+    background-color: rgba(255, 0, 0, 0.75);
+    color: white;
 }
 
 /* Media query for small screens */

@@ -1,0 +1,66 @@
+* {margin: 0; padding: 0}
+body {background: rgb(0, 0, 0);}
+canvas {display: block;}
+
+.container h1 {
+
+    font-size: 48px; /* Adjust the font-size for size */
+    color: rgb(255, 255, 255);
+    font-family: "terminus";
+    margin: 3%;
+    margin-left: 5%;
+    letter-spacing: 8px; /* Adjust the letter spacing */
+}
+
+.container h2 {
+    font-size: 24px; /* Adjust the font-size for size */
+    color: rgb(255, 255, 255);
+    font-family: "terminus";
+    margin: 1.5%;
+    letter-spacing: 8px; /* Adjust the letter spacing */
+}
+
+
+.container h3 {
+    color: rgb(255, 255, 255);
+    font-family: "terminus";
+    margin: 5%;
+    letter-spacing: 8px; /* Adjust the letter spacing */
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+.container h4 {
+    color: rgb(255, 255, 255);
+    font-family: "terminus";
+    margin: 5%;
+    letter-spacing: 8px; /* Adjust the letter spacing */
+    margin-top: 16px
+}
+
+
+.container h5 {
+    color: rgb(255, 255, 255);
+    font-family: "terminus";
+    margin: 5%;
+    letter-spacing: 8px; /* Adjust the letter spacing */
+    margin-top: 16px
+}
+
+.container p {
+
+    margin: 2%;
+    color: rgb(255, 255, 255);
+
+}
+
+.container li{
+    margin: 2%;
+    color: rgb(255, 255, 255);
+}
+
+.container readme {
+    text-decoration: underline;
+    text-decoration-color: chartreuse;
+}
