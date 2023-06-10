@@ -38,7 +38,7 @@ function draw() {
 }
 
 // Loop the animation
-setInterval(draw, 50);
+setInterval(draw, 33);
 
 // Listen to resize event
 window.addEventListener('resize', initialize);

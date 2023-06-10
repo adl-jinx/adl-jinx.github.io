@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'MatriBoo';
+    src: url('fonts/matriBoo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "bodoni";
+    src: url('bodoni/bodoni.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "terminus";
+    src: url('terminus.ttf') format('truetype');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(0, 0, 0);
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.transparent-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display:list-item;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.box {
+    position: relative;
+    width: 430px;
+    height: 430px;
+    background-color: #000;
+    border: 1px solid rgb(42, 45, 42);
+    border-radius: 8px;
+    padding: 16px;
+    
+    margin: 2% auto; /* Auto margin on top and bottom, and center horizontally */
+    box-shadow: 10px 10px 25px rgb(15, 15, 15);
+
+    display: flex; /* Add flexbox display */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+
+.title-box {
+    position: relative;
+    font-family: 'bodoni';
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    border: 1px solid rgb(42, 45, 42);
+    padding-top: 8px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.box .logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    padding: 8px;
+    border-radius: 30px;
+}
+
+.box p {
+    margin: 5%;
+    margin-top: 4px;
+    margin-right: 8%;
+    top: 40%;
+    font-family: "bodoni";
+    letter-spacing: 1px;
+
+}
+
+.box h2, h3, h4{
+    padding: 12px;
+    font-family: "bodoni";
+}
+
+.box h2 {
+    position: absolute;
+    top: 8px;
+    left: 132px;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.box h3 {
+    position: absolute;
+    top: 48px; /* Adjust this as needed */
+    left: 132px;
+    font-size: 24px;
+    color: white;
+}
+
+.box h4 {
+    position: absolute;
+    top: 82px; /* Adjust this as needed */
+    left: 132px;
+    font-size: 18px;
+    color: white;
+}
+
+
+.box .details{
+    top: 0;
+    left: 120px;
+    width: calc(100%-130px);
+}
+
+.details h2, .details h3, .details h4, p {
+position: absolute;
+margin: 0;
+color: white;
+
+}
+.details h2 {
+    font-size: 24px;
+}
+
+.details h3 {
+    font-size: 20px;
+}
+.details h4 {
+    font-size: 16px;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+
+
+.container .full_page {
+    display: inline-block;
+    margin-top: 12px;
+    font-family: "terminus";
+    padding: 8px 8px;
+    font-size: 12px;
+    color: rgba(255, 255, 255);
+    background-color: rgb(10, 20, 10);
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none; /* removes underline */
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.container .full_page:hover {
+    background-color: rgba(0, 255, 0, 0.75);
+    color: black;
+}

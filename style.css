@@ -18,6 +18,22 @@
 body {background: rgb(0, 0, 0);}
 canvas {display: block;}
 
+
+.title-box {
+    position: relative;
+    font-family: 'bodoni';
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    border: 1px solid rgb(42, 45, 42);
+    padding-top: 8px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+
 .container {
     position: absolute;
     top: 50%;
@@ -32,6 +48,7 @@ canvas {display: block;}
     display:flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -39,9 +56,21 @@ canvas {display: block;}
     text-align: center;
     top: 50%;
     left: 50%;
-    font-size: 48px; /* Adjust the font-size for size */
+    font-size: 42px; /* Adjust the font-size for size */
     color: rgb(255, 255, 255);
     font-family: "";
+    margin-bottom: 10px;
+    letter-spacing: 16px; /* Adjust the letter spacing */
+    margin-bottom: 16px;
+    margin-left: 16px
+}
+.container h2 {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 28px; /* Adjust the font-size for size */
+    color: rgb(255, 255, 255);
+    font-family: "terminus";
     margin-bottom: 10px;
     letter-spacing: 8px; /* Adjust the letter spacing */
     margin-bottom: 16px;

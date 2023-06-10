@@ -45,3 +45,19 @@ window.addEventListener('resize', initialize);
 
 // Initial setup
 initialize();
+
+
+
+const buttons = document.querySelectorAll('.btn, .btn2, .btn3');
+
+buttons.forEach(button => {
+  const soundFile = button.dataset.sound;
+  
+  // Create an audio element
+  const audio = new Audio(soundFile);
+  
+  button.addEventListener('mouseenter', () => {
+    audio.currentTime = 0; // Reset audio to start
+    audio.play();
+  });
+});
