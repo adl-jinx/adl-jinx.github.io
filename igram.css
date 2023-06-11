@@ -76,7 +76,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 50px; /* Adjust the margin-top as needed */
-    overflow-y: scroll;
+
     max-height: 100%;
 }
 
