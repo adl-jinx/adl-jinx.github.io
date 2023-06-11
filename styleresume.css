@@ -22,6 +22,7 @@
 
 body {
     background: rgb(0, 0, 0);
+    font-family:'Courier New', Courier, monospace
 }
 
 canvas {
@@ -51,16 +52,15 @@ canvas {
 
 .box {
     position: relative;
-    width: 430px;
-    height: 280px;
+    width: 480px;
+    height: 480px;
     background-color: #000;
-    border: 1px solid rgb(42, 45, 42);
+    border: 1px solid rgb(0, 255, 0);
     border-radius: 8px;
     padding: 16px;
-    
+    word-spacing: 3px;
     margin: 2% auto; /* Auto margin on top and bottom, and center horizontally */
-    box-shadow: 10px 10px 25px rgb(15, 15, 15);
-
+    box-shadow: 10px 10px 25px rgba(30, 255, 0, 0.137);
     display: flex; /* Add flexbox display */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -70,7 +70,6 @@ canvas {
 
 .title-box {
     position: relative;
-    font-family: 'bodoni';
     width: 100%;
     height: 50px;
     background-color: #000;
@@ -88,22 +87,22 @@ canvas {
     position: absolute;
     top: 5%;
     left: 3%;
-    padding: 8px;
-    border-radius: 18px;
+    padding: 12px;
+    border-radius: 36px;
 }
 
 .box p {
     margin: 5%;
-    margin-right: 8%;
-    top: 40%;
-    font-family: "bodoni";
+    margin-top: 4px;
+    margin-right: 16px;
+    top: 33%;
     letter-spacing: 1px;
 
 }
 
 .box h2, h3, h4{
-    padding: 8px;
-    font-family: "bodoni";
+    padding: 32px;
+
 }
 
 .box h2 {
@@ -119,7 +118,7 @@ canvas {
     position: absolute;
     top: 48px; /* Adjust this as needed */
     left: 132px;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
 }
 

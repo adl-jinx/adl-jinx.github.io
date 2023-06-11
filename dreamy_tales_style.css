@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'sfcompactthin';
+    src: url('SF-Compact-Display-Thin.ttf') format('truetype');
+}
+
+@font-face {
     font-family: "bodoni";
     src: url('bodoni/bodoni.ttf') format('truetype');
 }
@@ -15,36 +20,20 @@
 }
 
 * {margin: 0; padding: 0}
-body {background: color(rgb(0, 0, 0))}
 
+body {
+    background-color: rgb(255, 255, 255);
 
-.highlight {
-    background-color: #000;
 }
-
 
 .background-square {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 400px;
     background-image: url(dreamy_tales/assets/background.png);
-    background-size: cover;
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
     z-index: -1;
-}
-
-.videogif {
-    position: relative;
-    border-radius: 5%;
-    border: #000;
-    background-color: #000;
-    border: 1px solid rgb(42, 45, 42);
-    border-radius: 16px;
-    padding: 16px;
-    box-shadow: 10px 10px 10px rgb(10, 15, 15);
 }
 
 
@@ -64,44 +53,82 @@ body {background: color(rgb(0, 0, 0))}
     z-index: 1;
 }
 
+.logo {
+    position: relative;
+    top: 56px;
+    margin-top: 16px;
+    width: 150px;
+    height: 150px;
+    border-radius: 32px;
+}
+
 
 
 .container {
-    position: relative;
     font-family: "sfcompact";
     padding: 12px;
-    top: 5%;
     text-align: center;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px; /* Adjust the margin-top as needed */
+
+    max-height: 100%;
 }
 
 .container h1 {
-    margin-top: 3%;
-    top: 50%;
-    left: 50%;
-    font-size: 48px; /* Adjust the font-size for size */
+    position: relative;
+    top: 84px;
+    font-size: 64px; /* Adjust the font-size for size */
     color: rgb(255, 255, 255);
-
     margin-bottom: 10px;
     letter-spacing: 8px; /* Adjust the letter spacing */
     margin-bottom: 8px;
     margin-left: 16px
 }
 .container h2 {
-    top: 50%;
-    left: 50%;
-    font-size: 28px; /* Adjust the font-size for size */
-    color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: 3%;
+    font-family: "sfcompactthin";
+    top: 124px;
+    height: 628px;
+    width: 700px;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 24px; /* Adjust the font-size for size */
+    color: rgb(0, 0, 0);
     margin-top: 10px;
      /* Adjust the letter spacing */
-    margin-bottom: 24px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-bottom: 8px;
+    z-index: -2;
+
 }
+
+
+.videogif {
+    position: relative;
+    top: 0px;
+    width: 200px;
+    padding: 0;
+    bottom: 0;
+    border-radius: 10%;
+    border: #000;
+    background-color: #000;
+    border: 2px solid rgb(42, 45, 42);
+    box-shadow: 10px 10px 10px rgb(10, 15, 15);
+}
+
+
+.showcase {
+    position: relative;
+    top: 64px; 
+    width: 700px;
+    border-radius: 24px;
+    padding-bottom: 224px;
+}
+
+
 
 .container h6 {
     top: 50%;
@@ -113,13 +140,9 @@ body {background: color(rgb(0, 0, 0))}
     margin-bottom: 8px;
 }
 
-.container .logo {
-        position: relative;
-        margin-top: 1%;
-        width: 150px;
-        height: 150px;
-        border-radius: 32px;
-    }
+
+
+
 
 
 /* Media query for small screens */

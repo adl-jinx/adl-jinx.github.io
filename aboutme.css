@@ -1,0 +1,182 @@
+
+
+@font-face {
+  font-family: "terminus";
+
+  src: url('terminus.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: "vt220";
+
+  src: url('assets/Glass_TTY_VT220.ttf') format('truetype');
+}
+
+
+body {
+  background-color: #000000;
+  font-family: "vt220", "BitstreamVeraSansMono", "CourierNew", Courier;
+
+}
+
+.title-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  border: 1px solid rgb(42, 45, 42);
+  padding-top: 4px;
+  padding-bottom: 16px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+
+
+.container {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.divider.divbox {
+  border-color: #0f0; 
+  margin-top: 8px; 
+  margin-bottom: 6px;
+}
+
+.box {
+  width: 310px;
+  height: 280px;
+  border: 1=0px solid rgb(0, 250, 0);
+  border-radius: 3px;
+  background-color: #000;
+  margin-left: 16px;
+}
+
+.boxpic.boxpic {
+
+  border: 1px solid rgb(0, 250, 0);
+  
+}
+
+.box.boxde {
+  width: 650px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+}
+
+.box.contacts{
+  width: 280px;
+  height: 600px;
+  line-height: normal;
+  margin-left: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+  color:#0f0;
+}
+
+.box.boxsoft {
+  width: 292px;
+  height: 600px;
+  line-height: normal;
+  margin-left: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+  color:#0f0;
+}
+.box.boxhard {
+    width: 290px;
+    height: 600px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+
+  }
+
+.animate-character {
+  display: inline-block;
+  white-space: pre;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-family: "Monaco", "BitstreamVeraSansMono", "CourierNew", Courier,
+    monospace;
+  font-size: 2.5px; /* Adjust the font size as desired */
+  border-color: bisque;
+  width: 100%;
+  height: 280px;
+  background-image: linear-gradient(
+    90deg,
+    #000 1px,
+    #0f0 1px,
+    rgb(0, 240, 0) 1px,
+    rgb(0, 255, 0) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 400% auto;
+  color: #000000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
+
+.animate-character .profiletext {
+  display: inline-block;
+  white-space: pre;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-family: "Consolas", "BitstreamVeraSansMono", "CourierNew", Courier,
+    monospace;
+  font-size: 3px; /* Adjust the font size as desired */
+}
+
+
+
+
+.command-line {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 22px;
+
+  word-spacing: -0.5em;
+}
+
+.command-line span {
+  display: inline;
+}
+
+.command-line span:first-child {
+  color: #0f0 !important;
+}
+
+.command-line span:nth-child(2) {
+  color: antiquewhite !important;
+}
+
+.command-line span:nth-child(3) {
+  color: rgb(110 155 226) !important;
+}
+
+.command-line span:nth-child(4) {
+  color: antiquewhite !important;
+}
