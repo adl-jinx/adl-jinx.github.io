@@ -31,7 +31,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 210px;
     background-image: url(dreamy_tales/assets/background.png);
     z-index: -1;
 }
@@ -81,11 +81,12 @@ body {
     position: relative;
     top: 84px;
     font-size: 64px; /* Adjust the font-size for size */
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin-bottom: 10px;
     letter-spacing: 8px; /* Adjust the letter spacing */
     margin-bottom: 8px;
-    margin-left: 16px
+    margin-left: 16px;
+    z-index: -2;
 }
 .container h2 {
     position: relative;
@@ -116,7 +117,7 @@ body {
     border: #000;
     background-color: #000;
     border: 2px solid rgb(42, 45, 42);
-    box-shadow: 10px 10px 10px rgb(10, 15, 15);
+
 }
 
 
