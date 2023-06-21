@@ -89,7 +89,6 @@ body {
     letter-spacing: 8px; /* Adjust the letter spacing */
     margin-bottom: 8px;
     margin-left: 16px;
-    z-index: -2;
 }
 .container h2 {
     position: relative;
@@ -105,7 +104,6 @@ body {
     margin-top: 10px;
      /* Adjust the letter spacing */
     margin-bottom: 8px;
-    z-index: -2;
 
 }
 
